@@ -1,11 +1,10 @@
-
+import Heading from "@/components/Heading";
 
 export default function Home() {
   return (
     <main>
-    <h1>
-    hello next Js
-    </h1>
+      <Heading></Heading>
+      <h1>hello next Js</h1>
     </main>
     // <main className="flex min-h-screen flex-col items-center justify-between p-24">
     //   <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
