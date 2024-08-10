@@ -20,12 +20,20 @@ const Navbar = () => {
       path: "/services",
     },
     {
+      title: "categories",
+      path: "/categories",
+    },
+    {
       title: "contact",
       path: "/contact",
     },
     {
       title: "Blogs",
       path: "/blogs",
+    },
+    {
+      title: "dashboard",
+      path: "/dashboard",
     },
   ];
 
