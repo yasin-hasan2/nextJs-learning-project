@@ -8,6 +8,10 @@ const Navbar = () => {
   const router = useRouter();
   const navItems = [
     {
+      title: "Home",
+      path: "/",
+    },
+    {
       title: "About",
       path: "/about",
     },
@@ -18,6 +22,10 @@ const Navbar = () => {
     {
       title: "contact",
       path: "/contact",
+    },
+    {
+      title: "Blogs",
+      path: "/blogs",
     },
   ];
 
@@ -61,12 +69,18 @@ const Navbar = () => {
               ))}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <a className="btn btn-ghost text-xl">Next Hero</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             {navItems.map((link) => (
-              <Link key={link.path} href={link.path}>
+              <Link
+                className={`${
+                  pathName === link.path && "text-cyan-300"
+                } btn m-3`}
+                key={link.path}
+                href={link.path}
+              >
                 {link.title}
               </Link>
             ))}
