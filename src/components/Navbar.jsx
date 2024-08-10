@@ -33,6 +33,9 @@ const Navbar = () => {
     router.push("/LogIn");
   };
 
+  if (pathName.includes("dashboard"))
+    return <div className="bg-cyan-700 p-4">Dashboard layout</div>;
+
   return (
     <div>
       <div className="navbar bg-base-100">
